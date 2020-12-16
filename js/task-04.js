@@ -12,10 +12,12 @@ console.log("Задание 4");
 import users from "./users.js";
 // console.log(users);
 
-const getInactiveUsers = (users) => {
-  const noActive = users.filter((user) => !user.isActive);
+// const getInactiveUsers = (users) => {
+//   const noActive = users.filter((user) => !user.isActive);
 
-  return noActive;
-};
+//   return noActive;
+// };
+
+const getInactiveUsers = users => users.filter((user) => !user.isActive);
 
 console.log(getInactiveUsers(users)); // [объект Moore Hensley, объект Ross Vazquez, объект Blackburn Dotson]

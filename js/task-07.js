@@ -12,11 +12,12 @@ console.log("Задание 7");
 import users from "./users.js";
 // console.log(users);
 
-const calculateTotalBalance = (users) => {
-  const balance = users.reduce((acc, user) => (acc += user.balance), 0);
+// const calculateTotalBalance = (users) => {
+//   const balance = users.reduce((acc, user) => (acc += user.balance), 0);
 
-  return balance;
-};
-  
+//   return balance;
+// };
+
+const calculateTotalBalance = (users) => users.reduce((acc, user) => (acc += user.balance), 0); 
 
 console.log(calculateTotalBalance(users)); // 20916

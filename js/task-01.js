@@ -13,11 +13,13 @@ console.log("Задание 1");
 import users from "./users.js";
 // console.log(users);
 
-const getUserNames = (users) => {
-  const UsersNames = users.map((user) => user.name);
+// const getUserNames = (users) => {
+//   const UsersNames = users.map((user) => user.name);
 
-  return UsersNames;
-};
+//   return UsersNames;
+// };
+
+const getUserNames = users => users.map((user) => user.name);
 
 console.log(getUserNames(users));
 // [ 'Moore Hensley', 'Sharlene Bush', 'Ross Vazquez', 'Elma Head', 'Carey Barr', 'Blackburn Dotson', 'Sheree Anthony' ]

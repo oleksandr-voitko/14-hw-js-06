@@ -13,9 +13,16 @@ import users from "./users.js";
 // console.log(users);
 
 const getUsersWithGender = (users, gender) => {
-  const genderArray = users.filter((user) => user.gender === gender);
+  const genderArray = users.reduce((usersArray, user) => {
+    if (user.gender === gender) {
+      usersArray.push(user.name);
+    };
+    return usersArray;
+  }, []);
 
   return genderArray;
 };
+
+
 
 console.log(getUsersWithGender(users, "male")); // [ 'Moore Hensley', 'Ross Vazquez', 'Carey Barr', 'Blackburn Dotson' ]

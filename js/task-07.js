@@ -18,6 +18,7 @@ import users from "./users.js";
 //   return balance;
 // };
 
-const calculateTotalBalance = (users) => users.reduce((acc, user) => (acc += user.balance), 0); 
+const calculateTotalBalance = (users) =>
+  users.reduce((acc, user) => (acc += user.balance), 0);
 
 console.log(calculateTotalBalance(users)); // 20916
